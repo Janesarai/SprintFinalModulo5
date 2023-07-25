@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegeichon"
+    app:startDestination="@id/mainActivity">
+
+    <fragment
+        android:id="@+id/fragmentZapatillas"
+        android:name="com.example.sprintfinalmodulo5.FragmentZapatillas"
+        android:label="fragment_zapatillas"
+        tools:layout="@layout/fragment_zapatillas" >
+        <action
+            android:id="@+id/action_fragmentZapatillas_to_fragmentCarrito"
+            app:destination="@id/fragmentCarrito" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCarrito"
+        android:name="com.example.sprintfinalmodulo5.FragmentCarrito"
+        android:label="fragment_carrito"
+        tools:layout="@layout/fragment_carrito" />
+</navigation>
